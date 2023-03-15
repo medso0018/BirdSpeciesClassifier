@@ -14,6 +14,7 @@ Interpretability was incorporated into the model using the LIME (Local Interpret
 The trained model achieved a test loss of 0.198 and a test accuracy of 95.04%. The interpretability features of the model showed that the model was making its predictions based on specific features of the birds, such as the beak's shape, the color of the feathers, and the size of the bird.
 
 ### Classification Report
+```
                                precision    recall  f1-score   support
 
               ABBOTTS BABBLER       1.00      0.80      0.89         5
@@ -520,7 +521,7 @@ NORTHERN BEARDLESS TYRANNULET       1.00      1.00      1.00         5
                      accuracy                           0.95      2500
                     macro avg       0.96      0.95      0.95      2500
                  weighted avg       0.96      0.95      0.95      2500
-
+```
 
 ## Files
 - `notebooks/`: The folder containing Jupyter notebooks used in the project.

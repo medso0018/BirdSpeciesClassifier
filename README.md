@@ -1,4 +1,4 @@
-# Bird Species Classification using ResNet18 and Fine-tuning with Interpretability using LIME
+# Bird Species Classification using ResNet18 with Interpretability using LIME
 This project is about training a deep learning model to classify 500 different species of birds using ResNet18, which has been fine-tuned using transfer learning to improve its accuracy. The project also incorporates interpretability into the model using the LIME library. The dataset used for training, testing, and validation consists of 80,085 training images, 2,500 test images, and 2,500 validation images (5 images per species) of high-quality original images. This project was completed as part of the [Kaggle challenge on bird species classification](https://www.kaggle.com/datasets/gpiosenka/100-bird-species).
 
 ## Dataset

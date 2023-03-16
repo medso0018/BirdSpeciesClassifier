@@ -8,7 +8,7 @@ The dataset consists of 500 bird species with 80,085 training images, 2,500 test
 To optimize the training process quickly, the model used a pre-trained ResNet18 architecture as the base model, which had already learned features from a large dataset, the ImageNet. A fully connected layer with 500 output units was added to the pre-trained model to predict 500 bird species. The entire model was trained using the backpropagation algorithm with the categorical cross-entropy loss function and optimized using the Adam optimizer. During the training process, all the layers and parameters in the model, including the weights in the added fully connected layer and the pre-trained ResNet18 model, were updated to minimize the loss function. The Adam optimizer was used to adjust the learning rate during training for efficient convergence. The model was trained for 10 epochs with a batch size of 128 and an initial learning rate of 0.001.
 
 ## Interpretability
-Interpretability was incorporated into the model using the LIME (Local Interpretable Model-Agnostic Explanations) library. LIME was used to generate explanations for the model's predictions, allowing us to understand the model's decision-making process better. LIME generates a heatmap that highlights the most important parts of an image that the model used to make its prediction.
+Interpretability was incorporated into the model using the LIME (Local Interpretable Model-Agnostic Explanations) library. LIME was used to generate explanations for the model's predictions, allowing us to understand the model's decision-making process better. LIME generates a activation map (Positive/Negative) that highlights the most important parts of an image that the model used to make its prediction.
 
 ## Results
 The trained model achieved a test loss of 0.198 and a test accuracy of 95.04%. The interpretability features of the model showed that the model was making its predictions based on specific features of the birds, such as the beak's shape, the color of the feathers, and the size of the bird.
@@ -21,7 +21,7 @@ The trained model achieved a test loss of 0.198 and a test accuracy of 95.04%. T
    weighted avg       0.96      0.95      0.95      2500
 ```
 
-## Files
+## Files & Directories
 - `notebooks/`: The folder containing Jupyter notebooks used in the project.
 - `models/`: The folder containing the trained model weights and architecture. The best model is saved here.
 - `README.md`: The readme file for the project.
